@@ -1,0 +1,212 @@
+.board-editor {
+  display: grid;
+  grid-template-columns: minmax(400px, 600px) minmax(280px, 380px);
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .board-editor {
+    grid-template-columns: 1fr;
+  }
+}
+
+.editor-board-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #1e1e2e;
+  border-radius: 12px;
+  padding: 16px;
+  color: #e0e0e0;
+}
+
+.editor-sidebar h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.editor-hint {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.piece-picker-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.picker-label {
+  font-size: 13px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.picker-pieces {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.picker-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: #2a2a3e;
+}
+
+.picker-btn.red {
+  color: #991b1b;
+}
+
+.picker-btn.black {
+  color: #1e3a5f;
+}
+
+.picker-btn.erase {
+  font-size: 13px;
+  color: #94a3b8;
+  width: auto;
+  padding: 0 14px;
+}
+
+.picker-btn:hover {
+  background: #3a3a5e;
+}
+
+.picker-btn.selected {
+  border-color: #3b82f6;
+  background: #3b82f622;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.turn-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.turn-btn {
+  padding: 6px 16px;
+  border: 1px solid #3a3a5e;
+  border-radius: 6px;
+  background: #2a2a3e;
+  color: #94a3b8;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.turn-btn.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+.fen-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fen-label {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.fen-display {
+  width: 100%;
+  padding: 6px 8px;
+  background: #0f0f1a;
+  border: 1px solid #3a3a5e;
+  border-radius: 6px;
+  color: #94a3b8;
+  font-size: 11px;
+  font-family: monospace;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.fen-import-row {
+  display: flex;
+  gap: 6px;
+}
+
+.fen-input {
+  flex: 1;
+  padding: 6px 8px;
+  background: #2a2a3e;
+  border: 1px solid #3a3a5e;
+  border-radius: 6px;
+  color: #e0e0e0;
+  font-size: 12px;
+  font-family: monospace;
+  outline: none;
+}
+
+.fen-input:focus {
+  border-color: #6366f1;
+}
+
+.fen-load-btn {
+  padding: 6px 12px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.fen-load-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.editor-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.editor-btn:hover {
+  opacity: 0.9;
+}
+
+.editor-btn.primary {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
+
+.editor-btn.secondary {
+  background: #2a2a3e;
+  border: 1px solid #3a3a5e;
+  color: #e0e0e0;
+}
