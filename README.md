@@ -2,7 +2,7 @@
 
 中国象棋智能教学平台 —— 通过 Pikafish 引擎分析和 AI 教练的自然语言解释，帮助你理解每一步棋的好坏，快速提升象棋水平。
 
-![Illustration of Xiangqi-Claw](https://github.com/StevenYuan666/Xiangqi-Claw/asset/image.png)
+![Illustration of Xiangqi-Claw](https://github.com/StevenYuan666/Xiangqi-Claw/blob/main/asset/image.png)
 
 ## 功能特性
 
